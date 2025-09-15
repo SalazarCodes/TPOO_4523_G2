@@ -4,6 +4,10 @@
  */
 package semana01ejemplo01;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  *
  * @author Kevin
@@ -27,6 +31,26 @@ public class Semana01Ejemplo01 {
         
         System.out.println("La suma es: " + suma);
         System.out.println(sumando1 + " + " + sumando2 + " es " + suma);
+        
+        System.out.println("\nCalculadora con metodos en sobrecarga");
+        Calculadora calc = new Calculadora();
+        
+        int resultadoTresNumeros = calc.sumar(328, 123, 1234);
+        System.out.println("La suma de los 3 numeros es: " + resultadoTresNumeros);
+        
+        //Suma con colecciones (listas)
+        List<Integer> listaNumeros = new ArrayList<>();
+        listaNumeros.add(1785);
+        listaNumeros.add(175);
+        listaNumeros.add(348);
+        listaNumeros.add(412);
+        listaNumeros.add(9642);
+        listaNumeros.add(6749);
+        
+        int sumaLista = calc.sumarLista(listaNumeros);
+        System.out.println("La suma de la lista es: " + sumaLista);
+        
+        
         
     }
     
